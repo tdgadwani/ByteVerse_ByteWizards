@@ -39,7 +39,8 @@ Dependencies of our project:
 Dependencies:-
 
 
-bcryptjs: ^2.4.3,
+
+    bcryptjs: ^2.4.3,
 
     ejs: ^3.1.9,
     
