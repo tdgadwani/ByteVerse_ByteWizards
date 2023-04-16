@@ -40,9 +40,14 @@ Dependencies:-
 
 
 bcryptjs: ^2.4.3,
+
     ejs: ^3.1.9,
+    
     express: ^4.18.2,
+    
     hbs: ^4.2.0,
+    
     mongoose: ^6.2.1,
+    
     multer: ^1.4.5-lts.1
 
