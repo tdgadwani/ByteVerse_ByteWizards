@@ -1,0 +1,73 @@
+/* --------------------------Home Page_---------------------- */
+.main_area{
+  position: relative;
+   
+}
+.welcome{
+text-align: center;
+padding-top: 20px;
+}
+
+.welcome_image{
+    text-align: center;
+    padding-top: 40px;
+}
+.description{
+
+   padding: 0px 100px;
+   padding-top: 40px;
+
+   text-align: center;
+}
+
+.main_button{
+   padding-top: 40px;
+   text-align: center;
+
+   
+    
+}
+.main_button button{
+   width: 140px;
+    height: 50px;
+    background: #455A64;
+    border-radius: 82px;
+    color: white;
+    font-size: 20px;
+    border: transparent;
+}
+
+.main_group{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+   padding-left: 100px;
+   padding-right: 100px;
+
+   /* background: linear-gradient(#455A64,white); */
+}
+
+.main_que{
+
+  text-align: center;
+  padding-top: 40px;
+}
+.main_end{
+   text-align: center;
+  padding-top: 40px;
+}
+button a{
+   text-decoration:none;
+   color:white;
+   font-size: 15px;
+}
+
+.bottom{
+   padding-top: 40px;
+}
+.bottom .bottoms{
+   
+   padding-left: 20px;
+   height: 50px;
+}

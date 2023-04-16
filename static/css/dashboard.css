@@ -1,0 +1,75 @@
+.profile h1{
+    
+    padding-top: 2px;
+}
+
+
+.dash a{
+    width: 20px;
+}
+
+.signup_button{width: 200px;
+    height: 50px;
+    background: #455A64;
+    border-radius: 82px;
+    color: white;
+    font-size: 11px;
+    border: transparent;
+    margin-left: 128px;
+    margin-top: 30px;
+
+}
+.off{
+    margin-right: 10px;
+}
+.sidebutton{
+    padding-top: 10px;
+    padding-right: 45rem;
+    
+    color: #455A64;
+}
+.flexx{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.user_image{
+    padding-left: 15rem;
+    padding-right: 30px;
+}
+
+
+button a{
+    text-decoration:none;
+    color:white;
+    font-size: 15px;
+}
+
+
+.bottom{
+    padding-top: 40px;
+ }
+ .bottom .bottoms{
+    
+    padding-left: 20px;
+    height: 50px;
+ }
+ .linkremove{
+    text-decoration: none;
+ }
+    
+.dashboard_username h5{
+    font-size: 20px;
+    margin-left: 40px;
+}
+.Card_dashboard{
+margin-left: 250px;
+margin-top: 20px;
+padding-bottom: 60px;
+}
+
+.dashboard_image{
+    position: absolute;
+    top: 170px;
+    right: 160px;
+}
