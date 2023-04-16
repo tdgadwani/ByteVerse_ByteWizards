@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Buddy</title>
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/doubt.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/doubt.css">
 </head>
 
 <body>
@@ -66,24 +66,26 @@
         <div class="row">
             <div class="col-lg-6 col-md-12">
                 <div class="form_enteries">
-                    <div class="mb-3">
+                  <form action="/doubt" method="POST" enctype="multipart/form-data"">  
+                  <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Topic :</label>
-                        <input type="text" class="form-control login_input" id="exampleFormControlInput1">
+                        <input type="text" name="topic" class="form-control login_input" id="exampleFormControlInput1">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput2" class="form-label">Tags :</label>
-                        <input type="text" class="form-control login_input" id="exampleFormControlInput2">
+                        <input type="text" name="tags" class="form-control login_input" id="exampleFormControlInput2">
                     </div>
                
                     <div class="mb-3  ">
                         <label for="exampleFormControlTextarea1" class="form-label">Write/Upload your question here :</label>
-                        <textarea class="form-control login_textarea" id="exampleFormControlTextarea1" rows="3"></textarea><input type="file"
-                        id="doubt" name="doubt"
+                        <textarea class="form-control login_textarea" name="doubt" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <input type="file" id="doubt" name="image"
                         accept="image/png, image/jpeg, image/jpg">
                     </div>
               
                  
                     <button type="submit" class="btn btn-dark doubt_button">POST</button>
+                  </form>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12">

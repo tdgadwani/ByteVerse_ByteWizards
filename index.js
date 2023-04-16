@@ -63,8 +63,8 @@ app.get('/group',(req,res)=>{
 app.get("/login",(req,res)=>{
     res.render('login')  
 })
-app.get('/postdoubt',(req,res)=>{
-    res.render('postdoubt');
+app.get('/doubt',(req,res)=>{
+    res.render('doubt');
 })
 app.get('/solve',(req,res)=>{
     res.render('solve');
@@ -98,20 +98,21 @@ app.post("/register",async (req,res)=>{
         }
         const email = req.body.email;
         const mobnumber=req.body.number;
-        if (!validateEmail(email)) {
-            document.getElementsByClassName("signup_email_hidden").innerHTML="Please Enter Valid Email ID";
-            document.getElementsByClassName("signup_email_hidden").style.visibility="visible";
-            document.getElementsByClassName("signup_email_hidden").style.color="red";
-        } else if (!isOrgEmail(email)) {
-            document.getElementsByClassName("signup_email_hidden").innerHTML="Please Enter Organization's Email ID";
-            document.getElementsByClassName("signup_email_hidden").style.visibility="visible";
-            document.getElementsByClassName("signup_email_hidden").style.color="red";
-        }else if(!validateMobileNumber(mobnumber)){
-            document.getElementsByClassName("signup_mobile_hidden").innerHTML="Please Enter Valid Mobile Number";
-            document.getElementsByClassName("signup_mobile_hidden").style.visibility="visible";
-            document.getElementsByClassName("signup_mobile_hidden").style.color="red";
-        } 
-        else if(validateEmail(email) && validateMobileNumber(mobnumber)){
+        // if (!validateEmail(email)) {
+        //     // document.getElementsByClassName("signup_email_hidden").innerHTML="Please Enter Valid Email ID";
+        //     // document.getElementsByClassName("signup_email_hidden").style.visibility="visible";
+        //     // document.getElementsByClassName("signup_email_hidden").style.color="red";
+        // } else if (!isOrgEmail(email)) {
+        //     // document.getElementsByClassName("signup_email_hidden").innerHTML="Please Enter Organization's Email ID";
+        //     // document.getElementsByClassName("signup_email_hidden").style.visibility="visible";
+        //     // document.getElementsByClassName("signup_email_hidden").style.color="red";
+        // }else if(!validateMobileNumber(mobnumber)){
+        //     // document.getElementsByClassName("signup_mobile_hidden").innerHTML="Please Enter Valid Mobile Number";
+        //     // document.getElementsByClassName("signup_mobile_hidden").style.visibility="visible";
+        //     // document.getElementsByClassName("signup_mobile_hidden").style.color="red";
+        // } 
+        // else 
+        if(validateEmail(email) && validateMobileNumber(mobnumber)){
             // proceed with signup process
             // var passwordHash;
             // //var password;
@@ -127,8 +128,6 @@ app.post("/register",async (req,res)=>{
                 mobnumber:req.body.number,
                 password:req.body.password
             })
-             
-
             // const registered=
             await registerUser.save();
             res.status(201).render('login')//redering login page
@@ -152,14 +151,14 @@ app.post('/login',async(req,res)=>{
             // document.getElementsByClassName("email_hidden").style.color="red";
         // }
         const passwordMatch=await bcrypt.compare(password,useremail.password)
-        const token=await useremail.generateAuthToken();
-        res.cookie('jwt',token,{
-            expires:new Date(Date.now()+30000),
-            httpOnnly:true
-            // secure:true
-        })
+        // const token=await useremail.generateAuthToken();
+        // res.cookie('jwt',token,{
+        //     expires:new Date(Date.now()+30000),
+        //     httpOnnly:true
+        //     // secure:true
+        // })
         if(passwordMatch){
-            res.status(201).render('/');//rendering home page
+            res.status(201).render('index');//rendering home page
         }
     }catch(error){
         res.status(400).send(`INVALID ${error}`)
@@ -213,9 +212,9 @@ app.post('/setpassword',async (req,res)=>{
     }
 })
 
-app.get('/doubt',(req,res)=>{
-    res.render('doubt');
-})
+// app.get('/doubt',(req,res)=>{
+//     res.render('doubt');
+// })
 
 app.post('/doubt',(req,res)=>{
     
