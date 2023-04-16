@@ -3,7 +3,9 @@ Project-Study Buddy
 ppt link-https://www.canva.com/design/DAFfhyzA2Ms/fJj0rTlz9GClFd4R4U26MQ/edit?utm_content=DAFfhyzA2Ms&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 video link-
+Presentation Video:- https://youtu.be/QcqveRvPwXk
 
+Implementation Video:- https://youtu.be/5H-LhgE9A28
 
 STUDY BUDDY:
 A non-profit welfare project that strives to give students the opportunity to build connections

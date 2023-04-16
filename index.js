@@ -67,10 +67,10 @@ app.get('/doubt',(req,res)=>{
     res.render('doubt');
 })
 app.get('/solve',(req,res)=>{
-    res.render('solve');
+    res.render('solve')
 })
-app.get('/communities',(req,res)=>{
-    res.send('communities')
+app.get('/community',(req,res)=>{
+    res.render('community')
 })
 app.get("/forgotpassword",(req,res)=>{
     res.render('forgotpassword') 
