@@ -54,3 +54,9 @@ Dependencies:-
     
     multer: ^1.4.5-lts.1
 
+
+
+For testing purpose, use these login credentials :
+       
+        email: tusharg.ug21.cs@nitp.ac.in
+        password: Tushar@123
