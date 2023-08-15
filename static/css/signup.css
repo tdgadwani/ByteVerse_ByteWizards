@@ -9,6 +9,19 @@ body{
 .login_page_head{
     padding-top: 10px;
 }
+.navbar a{
+   
+  color: white;
+  transition: 0.3s ease-in-out;
+
+
+
+}
+
+.navbar a:hover{
+  color: #707070;
+
+}
 
 .login_input{
     width: 420px;
@@ -87,4 +100,30 @@ button a{
     text-decoration: none;
     color: white;
     font-size: 15px;
+}
+
+
+
+@media screen and (max-width:500px) {
+    .login_lastname {
+    margin-right: 3px;
+}
+.mb-3{
+    padding-right: 10px;
+}
+
+input{
+    margin-right: 20px;
+}
+.login_input{
+    width: 80%;
+}
+
+.signup_button{
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+
+    
 }

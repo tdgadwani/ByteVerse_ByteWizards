@@ -9,6 +9,19 @@ body{
 .login_page_head{
     margin-bottom: 30px ;
 }
+.navbar a{
+   
+  color: white;
+  transition: 0.3s ease-in-out;
+
+
+
+}
+
+.navbar a:hover{
+  color: #707070;
+
+}
 a{
     text-decoration: none;
     color: #455A64;
@@ -32,6 +45,9 @@ font-size: 20px;
 border: transparent;
 margin-left: 160px;
 }
+.login_button:hover{
+    background-color: #707070;
+}
 
 .login_memo{
   position: absolute;
@@ -43,7 +59,7 @@ margin-left: 160px;
 }
 .login_memo img{
 
-    width: 100%;
+    width: 120%;
 }
 
 
@@ -52,9 +68,5 @@ margin-left: 160px;
 
 @media screen and (max-width:450px){
 
-    .login_button{
-
-    background: #ab0909;
    
-}
 }

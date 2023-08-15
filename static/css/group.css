@@ -11,6 +11,19 @@
     margin-left: 400px;
     margin-top: 100px;
 }
+.navbar a{
+   
+  color: white;
+  transition: 0.3s ease-in-out;
+
+
+
+}
+
+.navbar a:hover{
+  color: #707070;
+
+}
 .create_group button{
     margin-left: 180px;
     margin-top: 20px;

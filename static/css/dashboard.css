@@ -19,6 +19,19 @@
     margin-top: 30px;
 
 }
+.navbar a{
+   
+  color: white;
+  transition: 0.3s ease-in-out;
+
+
+
+}
+
+.navbar a:hover{
+  color: #707070;
+
+}
 .off{
     margin-right: 10px;
 }
@@ -72,4 +85,68 @@ padding-bottom: 60px;
     position: absolute;
     top: 170px;
     right: 160px;
+}
+
+
+@media screen and (max-width:500px){
+
+    /* .dashboard_image img{
+        width:70%;
+       
+    }
+    .user_responsive{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .user_image{
+        width: 60%;
+        padding-left: 3px ;
+        padding-right: 3px;
+    }
+    .user_image img{
+        width: 160%;
+    }
+    
+    .Card_dashboard{
+        width: 150%;
+    } */
+
+
+   
+
+    .user_image{
+        padding-top: 15px;
+        padding-right: 10px;
+        padding-left: 60px;
+    }
+    .user_image img{
+        width: 40%;
+    }
+
+    .dashboard_image img{
+        display: none;
+    };
+
+    .profile h1{
+        text-align: center;
+    }
+    .Card_dashboard {
+        margin-left: 40px;
+        padding-right: 155px;
+    }
+    
+
+    .sidebutton{
+    padding-top: 10px;
+    padding-left:5px ;
+    padding-right: 50px;
+    
+    color: #455A64;
+}
+
+
+
+    
 }

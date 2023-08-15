@@ -14,6 +14,19 @@
     border-radius: 21px;
     border: transparent;
 }
+.navbar a{
+   
+  color: white;
+  transition: 0.3s ease-in-out;
+
+
+
+}
+
+.navbar a:hover{
+  color: #707070;
+
+}
 
 .login_textarea{
     width: 420px;
