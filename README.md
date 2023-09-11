@@ -54,7 +54,7 @@ Dependencies:-
     
     multer: ^1.4.5-lts.1
 
-
+    jsonwebtoken: ^9.0.1
 
 For testing purpose, use these login credentials :
        
